@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR FINDER REFINED</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .refined {
+            color: #000000;
+            transition: transform 0.5s ease, color 0.5s ease;
+        }
+
+        .refined:hover {
+            transform: scale(1.5);
+            color: #FAE6E6;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+ 	}
+
+        h4 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+       button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+       
+    </style>
+</head>
+<body>
+
+    <h1>COLOR FINDER <span class="refined">REFINED</span></h1>
+    <h2>Find a Color</h2>
+	<h3>Mentally note: ColorFinder will not change color whenever the background turns black.</h3>
+ <h4>"Quick Guide. Hex codes work like the RBG selector. However you type the values on your own. From 0 to 9, then A/a to F/f (capitalization makes no difference). If you know how to mix your colors, Hex codes are as easy as eating icecream. You will learn overtime!" -Kira</h4>
+  
+
+ Don't know how to find your desired color? Try the Color selection dropdown !
+
+    <select id="colorSelector">
+        <option value="#FF0000">Red (#FF0000)</option>
+<option value="#B22222">FireBrick (#B22222)</option>
+<option value="#8B0000">DarkRed (#8B0000)</option>
+<option value="#FF6347">Tomato (#FF6347)</option>
+<option value="#FF4500">OrangeRed (#FF4500)</option>
+<option value="#DC143C">Crimson (#DC143C)</option>
+<option value="#FF7F50">Coral (#FF7F50)</option>
+<option value="#FA8072">Salmon (#FA8072)</option>
+<option value="#E9967A">DarkSalmon (#E9967A)</option>
+<option value="#F08080">LightCoral (#F08080)</option>
+
+<option value="#FF8C00">DarkOrange (#FF8C00)</option>
+<option value="#FFA500">Orange (#FFA500)</option>
+<option value="#FFD700">Gold (#FFD700)</option>
+<option value="#FFBF00">Amber (#FFBF00)</option>
+<option value="#FF4500">OrangeRed (#FF4500)</option>
+<option value="#FFDAB9">PeachPuff (#FFDAB9)</option>
+<option value="#FFE4B5">Moccasin (#FFE4B5)</option>
+<option value="#F4A460">SandyBrown (#F4A460)</option>
+
+<option value="#FFFF00">Yellow (#FFFF00)</option>
+<option value="#FFFFE0">LightYellow (#FFFFE0)</option>
+<option value="#FFD700">Gold (#FFD700)</option>
+<option value="#F0E68C">Khaki (#F0E68C)</option>
+<option value="#BDB76B">DarkKhaki (#BDB76B)</option>
+
+<option value="#00FF00">Lime (#00FF00)</option>
+<option value="#32CD32">LimeGreen (#32CD32)</option>
+<option value="#98FB98">PaleGreen (#98FB98)</option>
+<option value="#90EE90">LightGreen (#90EE90)</option>
+<option value="#00FA9A">MediumSpringGreen (#00FA9A)</option>
+<option value="#228B22">ForestGreen (#228B22)</option>
+<option value="#006400">DarkGreen (#006400)</option>
+
+<option value="#008000">Green (#008000)</option>
+<option value="#2E8B57">SeaGreen (#2E8B57)</option>
+<option value="#3CB371">MediumSeaGreen (#3CB371)</option>
+<option value="#20B2AA">LightSeaGreen (#20B2AA)</option>
+<option value="#006400">DarkGreen (#006400)</option>
+
+<option value="#0000FF">Blue (#0000FF)</option>
+<option value="#0000CD">MediumBlue (#0000CD)</option>
+<option value="#00008B">DarkBlue (#00008B)</option>
+<option value="#4169E1">RoyalBlue (#4169E1)</option>
+<option value="#4682B4">SteelBlue (#4682B4)</option>
+<option value="#5F9EA0">CadetBlue (#5F9EA0)</option>
+<option value="#6495ED">CornflowerBlue (#6495ED)</option>
+<option value="#1E90FF">DodgerBlue (#1E90FF)</option>
+<option value="#87CEEB">SkyBlue (#87CEEB)</option>
+<option value="#87CEFA">LightSkyBlue (#87CEFA)</option>
+<option value="#00BFFF">DeepSkyBlue (#00BFFF)</option>
+
+<option value="#8A2BE2">BlueViolet (#8A2BE2)</option>
+<option value="#9932CC">DarkOrchid (#9932CC)</option>
+<option value="#9400D3">DarkViolet (#9400D3)</option>
+<option value="#8B008B">DarkMagenta (#8B008B)</option>
+
+<option value="#800080">Purple (#800080)</option>
+<option value="#8A2BE2">BlueViolet (#8A2BE2)</option>
+<option value="#DA70D6">Orchid (#DA70D6)</option>
+<option value="#D8BFD8">Thistle (#D8BFD8)</option>
+<option value="#EE82EE">Violet (#EE82EE)</option>
+<option value="#DA70D6">Orchid (#DA70D6)</option>
+
+<option value="#FF00FF">Fuchsia (#FF00FF)</option>
+<option value="#FF1493">DeepPink (#FF1493)</option>
+<option value="#C71585">MediumVioletRed (#C71585)</option>
+<option value="#DB7093">PaleVioletRed (#DB7093)</option>
+<option value="#800080">Purple (#800080)</option>
+
+<option value="#FFFFFF">White (#FFFFFF)</option>
+<option value="#F8F8FF">GhostWhite (#F8F8FF)</option>
+<option value="#FFFAFA">Snow (#FFFAFA)</option>
+<option value="#F0FFF0">Honeydew (#F0FFF0)</option>
+<option value="#F5FFFA">MintCream (#F5FFFA)</option>
+<option value="#F0F8FF">AliceBlue (#F0F8FF)</option>
+<option value="#E0FFFF">LightCyan (#E0FFFF)</option>
+<option value="#D3D3D3">LightGray (#D3D3D3)</option>
+
+<option value="#000000">Black (#000000)</option>
+<option value="#2F4F4F">DarkSlateGray (#2F4F4F)</option>
+<option value="#A9A9A9">DarkGray (#A9A9A9)</option>
+<option value="#808080">Gray (#808080)</option>
+<option value="#696969">DimGray (#696969)</option>
+
+<option value="#C0C0C0">Silver (#C0C0C0)</option>
+<option value="#D3D3D3">LightGray (#D3D3D3)</option>
+
+<option value="#A52A2A">Brown (#A52A2A)</option>
+<option value="#8B4513">SaddleBrown (#8B4513)</option>
+<option value="#A0522D">Sienna (#A0522D)</option>
+<option value="#D2691E">Chocolate (#D2691E)</option>
+<option value="#CD5C5C">IndianRed (#CD5C5C)</option>
+
+<option value="#DCDCDC">Gainsboro (#DCDCDC)</option>
+<option value="#BEBEBE">DarkGray (#BEBEBE)</option>
+<option value="#000000">Black (#000000)</option>
+    </select>
+
+    <button onclick="askFavoriteColor()">Enter a Hex Code</button>
+
+	 <script>
+        function askFavoriteColor() {
+            let hexCode = prompt("Enter a hex color code (e.g., #FF5733):");
+
+                       if (/^#([0-9A-Fa-f]{3}){1,2}$/.test(hexCode)) {
+                // Show a confirmation popup with the selected color
+                let confirmation = confirm("Your favorite color is: " + hexCode + ". Do you want to apply this color?");
+                
+                               if (confirmation) {
+                    document.body.style.backgroundColor = hexCode; 
+                }
+            } else if (hexCode === null) {
+                alert("You canceled the selection.");
+            } else {
+                alert("Invalid hex code! Please try again.");
+            }
+        }
+    </script>
+
+</script>
+
+</script>
+</body>
+</html>
