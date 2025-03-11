@@ -1,1 +1,1 @@
-For absolutely no reason I made this a website. To at least make it easily accesible instead of having to be a file to be downloaded.
+For absolutely no reason I made this a website. To at least make it easily accesible instead of having to be a file to be downloaded. Thank yoou so much for reading this! I really had fun making this website and I hope that it's somewhat fun. -- L.Ev
